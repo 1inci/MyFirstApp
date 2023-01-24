@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sezen Aksu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XR-LE-Enb">
+                                <rect key="frame" x="122" y="163" width="146" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="WZk-mp-66W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-zu-8vB">
+                                <rect key="frame" x="146" y="607" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tb3-n3-jOg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Welcome!"/>
+                                <connections>
+                                    <action selector="WelcomeClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDm-pI-geB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sezen-1" translatesAutoresizingMaskIntoConstraints="NO" id="KmZ-N1-LgR">
+                                <rect key="frame" x="-43" y="226" width="474" height="301"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KmZ-N1-LgR" firstAttribute="top" secondItem="3XR-LE-Enb" secondAttribute="bottom" constant="28" id="74b-er-wRi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hs2-zu-8vB" secondAttribute="bottom" constant="168" id="FdM-sB-BGi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KmZ-N1-LgR" secondAttribute="trailing" constant="-57" id="Gjd-NE-1XV"/>
+                            <constraint firstItem="hs2-zu-8vB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="HyV-pi-EQM"/>
+                            <constraint firstItem="KmZ-N1-LgR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-59" id="iMt-dC-rEE"/>
+                            <constraint firstItem="3XR-LE-Enb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="rW6-RM-46G"/>
+                            <constraint firstItem="hs2-zu-8vB" firstAttribute="top" secondItem="KmZ-N1-LgR" secondAttribute="bottom" constant="80" id="rzu-OU-b70"/>
+                            <constraint firstItem="3XR-LE-Enb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tNy-LX-2DO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SezenAksuImageView" destination="KmZ-N1-LgR" id="xTY-aV-NiS"/>
+                        <outlet property="SezenAksuLabel" destination="3XR-LE-Enb" id="ALy-J3-fb5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sezen-1" width="450" height="594"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
